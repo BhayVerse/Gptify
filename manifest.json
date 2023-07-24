@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Gptify",
+    "version": "1.1.1",
+    "description": "Extention for quick AI searches",
+    "content_scripts": [
+        {
+            "css": [
+                "src/main.css"
+            ],
+            "js": [
+                "src/main.js"
+            ],
+            "matches": [
+                "http//*"
+            ]
+        }
+    ],
+    "action": {
+        "default_icon": "content/defult16.png",
+        "default_popup": "src/main.html",
+        "default_title": "Gptify"
+    },
+    "icons": {
+        "16": "content/defult16.png",
+        "48": "content/defult48.png",
+        "128": "content/defult128.png"
+    }
+}
