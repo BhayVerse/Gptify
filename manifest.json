@@ -6,7 +6,7 @@
     "content_scripts": [
         {
             "css": [
-                "src/main.css"
+                "src/styles.css"
             ],
             "js": [
                 "src/main.js"
