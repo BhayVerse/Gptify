@@ -2,28 +2,25 @@
     "manifest_version": 3,
     "name": "Gptify",
     "version": "1.1.1",
-    "description": "Extention for quick AI searches",
-    "content_scripts": [
-        {
-            "css": [
-                "src/styles.css"
-            ],
-            "js": [
-                "src/main.js"
-            ],
-            "matches": [
-                "http//*"
-            ]
-        }
-    ],
+    "description": "Extension for quick AI searches",
+    "content_scripts": [{
+        "css": [
+            "src/styles.css"
+        ],
+        "js": [
+            "src/script.js"
+        ],
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+        ]
+    }],
+    "web_accessible_resources": [{
+        "resources": ["src/index.html"],
+        "matches": ["http://*/*", "https://*/*"]
+    }],
     "action": {
-        "default_icon": "content/defult16.png",
-        "default_popup": "src/main.html",
+        "default_popup": "src/index.html",
         "default_title": "Gptify"
-    },
-    "icons": {
-        "16": "content/defult16.png",
-        "48": "content/defult48.png",
-        "128": "content/defult128.png"
     }
 }
