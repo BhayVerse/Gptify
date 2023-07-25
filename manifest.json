@@ -8,7 +8,7 @@
             "src/styles.css"
         ],
         "js": [
-            "src/script.js"
+            "src/main.js"
         ],
         "matches": [
             "http://*/*",
@@ -16,11 +16,11 @@
         ]
     }],
     "web_accessible_resources": [{
-        "resources": ["src/index.html"],
+        "resources": ["src/main.html"],
         "matches": ["http://*/*", "https://*/*"]
     }],
     "action": {
-        "default_popup": "src/index.html",
+        "default_popup": "src/main.html",
         "default_title": "Gptify"
     }
 }
