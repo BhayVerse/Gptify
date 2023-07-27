@@ -1,7 +1,8 @@
 function addMessageFromUser(message) {
     const chatMessages = document.getElementById('chatMessages');
     const userMessageElement = document.createElement('me');
-    userMessageElement.textContent = 'You: ' + message;
+    chatMessages.innerHTML +=`<br>` // spacing
+    userMessageElement.textContent = message;
     chatMessages.appendChild(userMessageElement);
     chatMessages.scrollTop = chatMessages.scrollHeight;
     chatMessages.innerHTML +=`<br><br>` // spacing
@@ -11,7 +12,7 @@ function addMessageFromUser(message) {
 function addMessageFromModel(message) {
     const chatMessages = document.getElementById('chatMessages');
     const modelMessageElement = document.createElement('bot');
-    modelMessageElement.textContent = 'ChatGPT: ' + message;
+    modelMessageElement.textContent = message;
     chatMessages.appendChild(modelMessageElement);
     chatMessages.scrollTop = chatMessages.scrollHeight;
     chatMessages.innerHTML +=`<br><br>` //spacing
