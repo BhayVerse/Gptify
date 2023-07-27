@@ -29,10 +29,17 @@ body {
     padding: 8px;
 }
 
-.chat-messages p {
+.chat-messages me {
     margin: 0;
     padding: 4px 8px;
     border-radius: 4px;
+    background-color: aqua;
+}
+.chat-messages bot {
+    margin: 0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color:aquamarine;
 }
 
 .user-input {
@@ -60,3 +67,14 @@ body {
 .user-input button:hover {
     background-color: #0056b3;
 }
+
+#clear{
+    background-color:red;
+    
+}
+
+#clear:hover {
+    background-color:brown;
+}
+
+
