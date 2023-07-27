@@ -18,15 +18,15 @@ async function handleUserInput() {
     const inputMessage = document.getElementById('inputMessage');
     const userMessage = inputMessage.value.trim();
 
-    if (userMessage !== '') {
+    if (userMessage != '') {// !== ki jagha !=
         addMessageFromUser(userMessage);
 
-        const apiKey = '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';
-        const endpoint = 'https://api.openai.com/v1/engines/davinci-codex/completions';
-
+        const apiKey = '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'; //new api key
+        const endpoint = 'https://api.openai.com/v1/engines/text-davinci-003/completions'; //new model
         const data = {
             prompt: userMessage,
             max_tokens: 100,
+            temperature: 0.5, // response quality
         };
         const requestOptions = {
             method: 'POST',
