@@ -21,6 +21,8 @@ body {
 }
 
 .chat-messages {
+    background-image: url(/content/bg.jpg);
+    background-size: cover;
     height: 300px;
     overflow-y: auto;
     border: 1px solid #ccc;

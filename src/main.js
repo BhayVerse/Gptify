@@ -78,6 +78,7 @@ window.onload = () =>{
     if(last!=null) {
         chatMessages.innerHTML=last;
     }
+    chatMessages.scrollTop = chatMessages.scrollHeight;
 }
 
 //for clearing last sessions
